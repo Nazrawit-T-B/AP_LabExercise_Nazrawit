@@ -25,9 +25,13 @@ Constructor: Includes the type, sender, and the actual content represented by Te
 
 ## 3. ChatServer 
 •   Socket Management: Creates a ServerSocket.
+
 •   Connection: Connects to a socket object using the accept() method.
+
 •   Handling: Establishes a connection between clients through the use of the ClientHandler.
+
 •   Functionality: Handles broadcasting.
+
 ### What is Synchronized List?
   Definition: A synchronized (thread-safe) list backed by the specified list.
 •   Usage Constraints:
