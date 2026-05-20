@@ -1,0 +1,51 @@
+.root{
+    -fx-background-color:#1e1e1e;
+    -fx-font-family: "Consolas";
+    -fx-font-size:12;
+}
+.btn-fold{
+    -fx-background-color:orange;
+    -fx-text-fill:white;
+}
+.btn-call{
+    -fx-background-color:navy;
+    -fx-text-fill:white;
+}
+.btn-raise{
+    -fx-background-color:purple;
+     -fx-text-fill:white;
+}
+.btn-exit{
+        -fx-background-color:red;
+        -fx-text-fill:white;
+}
+.btn-play{
+         -fx-background-color:green;
+         -fx-text-fill:white;
+}
+
+.combo-box {
+    -fx-background-color:white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.combo-box-popup .list-view {
+    -fx-background-color:white;
+    -fx-border-color: #555;
+    -fx-border-width: 1px;
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill:black ;
+    -fx-font-family: "Consolas";
+    -fx-background-color: transparent;
+}
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #444;
+    -fx-text-fill:white ;
+}
+.combo-box-popup .list-cell:selected {
+    -fx-text-fill: green;
+}
