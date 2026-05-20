@@ -28,12 +28,17 @@ public class ClientHandler implements Runnable {
 
             Message joinMsg = (Message) in.readObject();
             this.username = joinMsg.getSender();
+            for (Message m:ChatDB.getLast50()){
+                out.writeObject(m);
+                out.flush();
+            }
             System.out.println(username + " connected.");
             ChatServer.broadcast(joinMsg, this);
 
 
             Message msg;
             while ((msg = (Message) in.readObject()) != null) {
+                ChatDB.saveMessage(msg);
                 System.out.println("[" + msg.getType() + "] from " + msg.getSender());
                 ChatServer.broadcast(msg, this);
             }
