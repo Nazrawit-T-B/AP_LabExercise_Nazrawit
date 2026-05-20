@@ -36,8 +36,9 @@ Constructor: Includes the type, sender, and the actual content represented by Te
   Definition: A synchronized (thread-safe) list backed by the specified list.
 •   Usage Constraints:
 *   In order to guarantee serial access, it is critical that all access to the backing list is accomplished through the returned list.
-*   Manual Synchronization: It is imperative that the user manually synchronize on the returned list when traversing it via Iterator, Spliterator, or Stream.
 ### What are Functional Interfaces? 
  They provide target types for lambda expressions and method references . Each functional interface has a single abstract method , called the functional method for that functional interface, to which the lambda expression's parameter and return types are matched or adapted. 
  
-Consumer
+Consumer - represents an operation that accepts a single input argument and returns no result. Unlike most other functional interfaces, Consumer is expected to operate via side-effects. 
+
+ScrollPane - a control that provides a scrolled, clipped viewport of its contents. 
